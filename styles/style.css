@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.container-inicial {
+    padding-top: 50px;
+}
+
+.container-inicial img {
+    width: 475px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px 2px rgba(0, 0, 0, 0.692);
+}
+
+.banners {
+    width: 450px;
+    transition-duration: 400ms;
+    transition-property: transform;
+}
+
+.banners:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animation-in-loop {
+    animation-name: pulse;
+    animation-duration: 500ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.animation-in-loop:hover {
+    animation: none;
+}
+
+
+#animacao-pulse {
+    transition-duration: .3s;
+    transition-property: transform;
+}
+
+#animacao-pulse:hover {
+    transform: scale(1.1);
+
+}
+
+section {
+    background-image: url("/image/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+footer {
+
+    background-color: white;
+    padding: 15px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+    .container-inicial img {
+        width: 350px;
+    }
+
+    .banners {
+        width: 300px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
